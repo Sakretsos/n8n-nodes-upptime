@@ -1,0 +1,50 @@
+{
+  "name": "n8n-nodes-upptime",
+  "version": "0.1.0",
+  "description": "n8n community node to fetch Upptime status monitoring data",
+  "keywords": [
+    "n8n-community-node-package",
+    "upptime",
+    "status",
+    "monitoring"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Ioannis Tavernarakis",
+    "email": "ioannis@tavernarakis.eu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sakretsos/n8n-nodes-upptime.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/Upptime/Upptime.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/UptimeApi.credentials.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.28.0",
+    "n8n-workflow": "*",
+    "typescript": "~5.4.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
