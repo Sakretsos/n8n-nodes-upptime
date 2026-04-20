@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-upptime",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "n8n community node to fetch Upptime status monitoring data",
   "keywords": [
     "n8n-community-node-package",
@@ -36,7 +36,7 @@
     "n8nNodesApiVersion": 1,
     "nodes": [
       "dist/nodes/Upptime/Upptime.node.js",
-      "dist/nodes/UptimeTrigger/UptimeTrigger.node.js"
+      "dist/nodes/Upptime/UptimeTrigger.node.js"
     ],
     "credentials": [
       "dist/credentials/UptimeApi.credentials.js"
