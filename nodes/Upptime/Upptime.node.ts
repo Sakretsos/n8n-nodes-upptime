@@ -9,7 +9,7 @@ import { NodeOperationError } from 'n8n-workflow';
 
 export class Upptime implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Upptime Status',
+		displayName: 'Upptime',
 		name: 'upptime',
 		icon: 'file:upptime.svg',
 		usableAsTool: true,
@@ -18,7 +18,7 @@ export class Upptime implements INodeType {
 		subtitle: '={{$parameter["operation"]}}',
 		description: 'Fetch status data from an Upptime status page',
 		defaults: {
-			name: 'Upptime Status',
+			name: 'Upptime',
 		},
 		inputs: ['main'] as INodeTypeDescription['inputs'],
 		outputs: ['main'] as INodeTypeDescription['outputs'],
