@@ -1,4 +1,5 @@
 /* eslint-disable n8n-nodes-base/node-dirname-against-convention */
+/* eslint-disable n8n-nodes-base/node-class-description-display-name-unsuffixed-trigger-node */
 import type {
 	IDataObject,
 	INodeType,
@@ -9,7 +10,7 @@ import { NodeOperationError } from 'n8n-workflow';
 
 export class UptimeTrigger implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Upptime Trigger',
+		displayName: 'Upptime',
 		name: 'uptimeTrigger',
 		icon: 'file:upptime.svg',
 		usableAsTool: true,
