@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-upptime",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "n8n community node to fetch Upptime status monitoring data",
   "keywords": [
     "n8n-community-node-package",
@@ -18,7 +18,7 @@
     "url": "https://github.com/Sakretsos/n8n-nodes-upptime.git"
   },
   "scripts": {
-    "build": "n8n-node build",
+    "build": "n8n-node build && node -e \"const fs=require('fs'),path=require('path');fs.readdirSync('nodes',{recursive:true}).filter(f=>f.endsWith('.node.json')).forEach(f=>{const s=path.join('nodes',f),d=path.join('dist/nodes',f);fs.mkdirSync(path.dirname(d),{recursive:true});fs.copyFileSync(s,d)})\"",
     "build:watch": "tsc --watch",
     "dev": "n8n-node dev",
     "lint": "n8n-node lint",
