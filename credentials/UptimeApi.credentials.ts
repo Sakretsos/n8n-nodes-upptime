@@ -8,7 +8,7 @@ import type {
 export class UptimeApi implements ICredentialType {
 	name = 'uptimeApi';
 	displayName = 'Upptime API';
-	icon = 'file:upptime.svg' as const;
+	icon = 'file:../icons/upptime.svg' as const;
 	documentationUrl = 'https://upptime.js.org/';
 	properties: INodeProperties[] = [
 		{

@@ -5,13 +5,13 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
 
 export class Upptime implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Upptime',
 		name: 'upptime',
-		icon: 'file:upptime.svg',
+		icon: 'file:../../icons/upptime.svg',
 		usableAsTool: true,
 		group: ['transform'],
 		version: 1,
@@ -20,8 +20,8 @@ export class Upptime implements INodeType {
 		defaults: {
 			name: 'Upptime',
 		},
-		inputs: ['main'] as INodeTypeDescription['inputs'],
-		outputs: ['main'] as INodeTypeDescription['outputs'],
+		inputs: [NodeConnectionTypes.Main],
+		outputs: [NodeConnectionTypes.Main],
 		credentials: [
 			{
 				name: 'uptimeApi',
